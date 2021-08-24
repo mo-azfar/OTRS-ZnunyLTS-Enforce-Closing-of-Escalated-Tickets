@@ -1,4 +1,7 @@
 # OTRS ZnunyLTS Enforce Closing of Escalated Tickets
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/MohdAzfar?locale.x=en_US)    
+  
 - Force an agent (ticket owner) to closing any escalated ticket first before can proceed to another ticket.
 - Built for OTRS CE 6.0.x / Znuny LTS  
 - Case Reference: https://community.znuny.org/viewtopic.php?f=62&t=42672  

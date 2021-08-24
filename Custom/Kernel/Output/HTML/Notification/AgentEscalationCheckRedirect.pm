@@ -33,11 +33,22 @@ sub Run {
 
     my $TicketObject = $Kernel::OM->Get('Kernel::System::Ticket');
     my $LayoutObject = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
+    
+    if (!$Param{Config}->{Queue})
+    {
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
+            LogPrefix => 'AgentEscalationCheckRedirect', 
+            Priority => 'error',
+            Message  => 'At least 1 queue must be define!',
+        );
+        return;
+    }
         
     my @TicketIDs = $TicketObject->TicketSearch(
         Result => 'ARRAY',
         # ticket escalation time of more than 1 minutes ago (optional)
         TicketEscalationTimeOlderMinutes => -1,
+        Queues => [@{$Param{Config}->{Queue}}],
         OwnerIDs => [$Self->{UserID}],
         UserID => $Self->{UserID},
     );

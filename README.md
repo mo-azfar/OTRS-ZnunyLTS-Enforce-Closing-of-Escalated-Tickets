@@ -8,6 +8,8 @@
     
 1. Define first the involved queues at System Configuration > Frontend::NotifyModule###888-AgentEscalationCheckRedirect  
 2. If agent has owned an escalated ticket in defined queues, he/she will be redirect to Escalation Screen.  
-3. Access to the module Admin, ITSM, Reporting and FAQ are still allowed.     
-   
-[![1.png](https://i.postimg.cc/yxPf7vBj/1.png)](https://postimg.cc/SYnLrLnY)
+3. Access to the module Admin, ITSM, Reporting and FAQ are still allowed.
+
+[![YOUTUBE VIDEO](https://img.youtube.com/vi/P-Kr9GNeqW8/0.jpg)](https://www.youtube.com/watch?v=P-Kr9GNeqW8)  
+     
+[![1.png](https://i.postimg.cc/yxPf7vBj/1.png)](https://postimg.cc/SYnLrLnY)  
